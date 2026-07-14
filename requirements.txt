@@ -1,0 +1,71 @@
+=====================================================
+Smart RFID Attendance System
+=====================================================
+
+Author: Rishabh Pandey
+
+-----------------------------------------------------
+Software Requirements
+-----------------------------------------------------
+
+Arduino IDE >= 2.0
+
+Libraries:
+
+MFRC522 >= 1.4.11
+IRremote >= 4.4.1
+LiquidCrystal (Built-in)
+SPI (Built-in)
+
+-----------------------------------------------------
+Hardware Requirements
+-----------------------------------------------------
+
+1 × Arduino Uno R3
+
+1 × RC522 RFID Reader Module
+
+1 × RFID Card / RFID Tag
+(Additional cards can be added.)
+
+1 × IR Receiver Module (VS1838B / HX1838)
+
+1 × IR Remote Control
+
+1 × 16x2 LCD Display (Parallel)
+
+1 × 10K Potentiometer
+(For LCD contrast adjustment)
+
+1 × Active Buzzer
+
+1 × Breadboard
+
+20–30 × Male-to-Male Jumper Wires
+
+1 × USB Cable (Arduino Programming)
+
+-----------------------------------------------------
+Power Requirements
+-----------------------------------------------------
+
+USB 5V via Arduino
+or
+5V External Power Supply
+
+-----------------------------------------------------
+Project Features
+-----------------------------------------------------
+
+✓ IR Remote Controlled Menu
+✓ RFID Attendance
+✓ Student Record Management
+✓ Attendance Reports
+✓ Live Attendance Count
+✓ Duplicate Card Detection
+✓ Unknown Card Detection
+✓ Attendance Reset
+✓ Buzzer Feedback
+✓ LCD Interface
+
+=====================================================
