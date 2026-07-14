@@ -1,0 +1,136 @@
+==========================================================
+SMART RFID ATTENDANCE SYSTEM
+PinDescription.txt
+==========================================================
+
+Author : Rishabh Pandey
+Board  : Arduino UNO R3
+
+==========================================================
+1. RC522 RFID READER CONNECTIONS
+==========================================================
+
+RC522 Pin          Arduino UNO Pin
+
+SDA (SS)   ------> D10
+SCK        ------> D13
+MOSI       ------> D11
+MISO       ------> D12
+RST        ------> D9
+IRQ        ------> Not Connected
+3.3V       ------> 3.3V
+GND        ------> GND
+
+NOTE:
+RC522 operates ONLY on 3.3V.
+Never connect its VCC pin to 5V.
+
+==========================================================
+2. 16x2 LCD DISPLAY CONNECTIONS
+==========================================================
+
+LCD Pin    Function           Arduino UNO Pin
+
+1          VSS         ------> GND
+2          VDD         ------> 5V
+3          VO          ------> Potentiometer Middle Pin
+4          RS          ------> D7
+5          RW          ------> GND
+6          EN          ------> D6
+7          D0          ------> Not Connected
+8          D1          ------> Not Connected
+9          D2          ------> Not Connected
+10         D3          ------> Not Connected
+11         D4          ------> D5
+12         D5          ------> D4
+13         D6          ------> D3
+14         D7          ------> D2
+15         A (LED+)    ------> 5V (220Ω resistor optional)
+16         K (LED-)    ------> GND
+
+==========================================================
+3. 10K POTENTIOMETER
+==========================================================
+
+Potentiometer Pin     Connection
+
+Left Pin       ------> GND
+Middle Pin     ------> LCD Pin 3 (VO)
+Right Pin      ------> 5V
+
+Used for LCD contrast adjustment.
+
+==========================================================
+4. IR RECEIVER MODULE
+==========================================================
+
+IR Receiver Pin      Arduino UNO Pin
+
+OUT          ------> A0
+VCC          ------> 5V
+GND          ------> GND
+
+==========================================================
+5. ACTIVE BUZZER
+==========================================================
+
+Buzzer Pin          Arduino UNO Pin
+
+Positive (+) ------> D8
+Negative (-) ------> GND
+
+==========================================================
+6. ARDUINO PIN USAGE
+==========================================================
+
+Arduino Pin          Connected Device
+
+D2          ------> LCD D7
+D3          ------> LCD D6
+D4          ------> LCD D5
+D5          ------> LCD D4
+D6          ------> LCD EN
+D7          ------> LCD RS
+D8          ------> Active Buzzer
+D9          ------> RC522 RST
+D10         ------> RC522 SDA (SS)
+D11         ------> RC522 MOSI
+D12         ------> RC522 MISO
+D13         ------> RC522 SCK
+
+A0          ------> IR Receiver OUT
+
+3.3V        ------> RC522 VCC
+
+5V          ------> LCD VDD
+                 IR Receiver VCC
+                 Potentiometer
+                 LCD Backlight
+
+GND         ------> RC522 GND
+                 LCD VSS
+                 LCD RW
+                 LCD Backlight (K)
+                 IR Receiver GND
+                 Active Buzzer
+                 Potentiometer
+
+==========================================================
+7. REQUIRED COMPONENTS
+==========================================================
+
+• Arduino UNO R3
+• RC522 RFID Reader
+• RFID Cards / Tags
+• 16x2 LCD Display (Parallel)
+• IR Receiver Module (VS1838B / HX1838)
+• IR Remote
+• 10K Potentiometer
+• Active Buzzer
+• Breadboard
+• Male-to-Male Jumper Wires
+• USB Cable
+
+==========================================================
+END OF FILE
+==========================================================
